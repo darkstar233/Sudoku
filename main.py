@@ -18,8 +18,6 @@ import tool
 loop_control = True
 
 while loop_control:
-    
-    loop_control = False
 
     # 初始选择菜单
     tool.clear_screen()
@@ -38,59 +36,49 @@ while loop_control:
     match option:
         # 标准数独
         case "1":
-            loop_control = True
             menu.standard()
 
         # 杀手数独
         case "2":
-            loop_control = True
             menu.killer()
 
         # 四宫数独
         case "3":
-            loop_control = True
             menu.fourgrid()
 
         # 六宫数独
         case "4":
-            loop_control = True
             menu.sixgrid()
 
         # 星星数独
         case "5":
-            loop_control = True
             menu.star()
 
         # 圆形数独
         case "6":
-            loop_control = True
             menu.circle()
 
         # 锯齿数独
         case "7":
-            loop_control = True
             menu.zigzag()
 
         # 对角线数独
         case "8":
-            loop_control = True
             menu.diagonal()
 
         # 不等号数独
         case "9":
-            loop_control = True
             menu.inequality()
 
         # 摩天楼数独
         case "10":
-            loop_control = True
             menu.skyscraper()
 
         case "quit" | "exit" | "退出":
+            loop_control = False
             print("退出程序!!!")
             tool.delay(1)
 
         case _:
-            loop_control = True
             print("输入错误，请重新输入选项!!!")
             tool.delay(1)
