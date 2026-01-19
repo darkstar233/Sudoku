@@ -5,10 +5,6 @@ from rich.console import Console
 console = Console()
 
 # 导入自定义模块
-# 数独求解模块
-import solve
-# 数独显示模块
-import show
 # 菜单模块
 import menu
 # 工具模块
