@@ -4,6 +4,7 @@
 # 导入rich模块，用于美化输出
 from rich import print as print
 from rich.console import Console
+
 console = Console()
 
 # 导入自定义模块
@@ -28,7 +29,7 @@ while loop_control:
     print(" 7.锯齿数独    8.对角线数独")
     print(" 9.不等号数独  10.摩天楼数独")
     print("")
-    option=input("请输入选项：")
+    option = input("请输入选项：")
 
     # 处理用户输入选项
     match option:

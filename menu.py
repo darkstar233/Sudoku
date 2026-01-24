@@ -3,11 +3,13 @@
 # 导入所需模块
 from rich import print as print
 from rich.console import Console
+
 console = Console()
 
 # 导入自定义模块
 # 导入工具模块
 import tool
+
 
 def select(option):
     """
@@ -42,7 +44,7 @@ def standard():
         print("标准数独")
         print("")
         print(" 1.求解    2.游戏")
-        option=input("\n请输入选项：")
+        option = input("\n请输入选项：")
         match option:
             case "1":
                 print("暂时还么有")
@@ -53,7 +55,8 @@ def standard():
                 tool.delay(1)
 
             case _:
-                loop_control=select(option)
+                loop_control = select(option)
+
 
 # 杀手数独菜单
 def killer():
@@ -66,7 +69,7 @@ def killer():
         print("杀手数独")
         print("")
         print(" 1.求解    2.游戏")
-        option=input("\n请输入选项：")
+        option = input("\n请输入选项：")
         match option:
             case "1":
                 print("暂时还么有")
@@ -77,7 +80,8 @@ def killer():
                 tool.delay(1)
 
             case _:
-                loop_control=select(option)
+                loop_control = select(option)
+
 
 # 四宫数独菜单
 def fourgrid():
@@ -90,7 +94,7 @@ def fourgrid():
         print("四宫数独")
         print("")
         print(" 1.求解    2.游戏")
-        option=input("\n请输入选项：")
+        option = input("\n请输入选项：")
         match option:
             case "1":
                 print("暂时还么有")
@@ -101,12 +105,13 @@ def fourgrid():
                 tool.delay(1)
 
             case _:
-                loop_control=select(option)
+                loop_control = select(option)
+
 
 # 六宫数独菜单
 def sixgrid():
     loop_control = True
-        
+
     while loop_control:
 
         tool.clear_screen()
@@ -114,7 +119,7 @@ def sixgrid():
         print("六宫数独")
         print("")
         print(" 1.求解    2.游戏")
-        option=input("\n请输入选项：")
+        option = input("\n请输入选项：")
         match option:
             case "1":
                 print("暂时还么有")
@@ -125,7 +130,8 @@ def sixgrid():
                 tool.delay(1)
 
             case _:
-                loop_control=select(option)
+                loop_control = select(option)
+
 
 # 星星数独菜单
 def star():
@@ -134,11 +140,11 @@ def star():
     while loop_control:
 
         tool.clear_screen()
-        
+
         print("星星数独")
         print("")
         print(" 1.求解    2.游戏")
-        option=input("\n请输入选项：")
+        option = input("\n请输入选项：")
         match option:
             case "1":
                 print("暂时还么有")
@@ -149,20 +155,21 @@ def star():
                 tool.delay(1)
 
             case _:
-                loop_control=select(option)
-        
+                loop_control = select(option)
+
+
 # 圆形数独菜单
 def circle():
     loop_control = True
-    
+
     while loop_control:
 
         tool.clear_screen()
-        
+
         print("圆形数独")
         print("")
         print(" 1.求解    2.游戏")
-        option=input("\n请输入选项：")
+        option = input("\n请输入选项：")
         match option:
             case "1":
                 print("暂时还么有")
@@ -173,7 +180,8 @@ def circle():
                 tool.delay(1)
 
             case _:
-                loop_control=select(option)
+                loop_control = select(option)
+
 
 # 锯齿数独菜单
 def zigzag():
@@ -182,11 +190,11 @@ def zigzag():
     while loop_control:
 
         tool.clear_screen()
-        
+
         print("锯齿数独")
         print("")
         print(" 1.求解    2.游戏")
-        option=input("\n请输入选项：")
+        option = input("\n请输入选项：")
         match option:
             case "1":
                 print("暂时还么有")
@@ -197,20 +205,21 @@ def zigzag():
                 tool.delay(1)
 
             case _:
-                loop_control=select(option)
+                loop_control = select(option)
+
 
 # 对角线数独菜单
 def diagonal():
     loop_control = True
-    
+
     while loop_control:
 
         tool.clear_screen()
-        
+
         print("对角线数独")
         print("")
         print(" 1.求解    2.游戏")
-        option=input("\n请输入选项：")
+        option = input("\n请输入选项：")
         match option:
             case "1":
                 print("暂时还么有")
@@ -221,7 +230,8 @@ def diagonal():
                 tool.delay(1)
 
             case _:
-                loop_control=select(option)
+                loop_control = select(option)
+
 
 # 不等号数独菜单
 def inequality():
@@ -230,11 +240,11 @@ def inequality():
     while loop_control:
 
         tool.clear_screen()
-        
+
         print("不等号数独")
         print("")
         print(" 1.求解    2.游戏")
-        option=input("\n请输入选项：")
+        option = input("\n请输入选项：")
         match option:
             case "1":
                 print("暂时还么有")
@@ -245,7 +255,8 @@ def inequality():
                 tool.delay(1)
 
             case _:
-                loop_control=select(option)
+                loop_control = select(option)
+
 
 # 摩天楼数独菜单
 def skyscraper():
@@ -254,11 +265,11 @@ def skyscraper():
     while loop_control:
 
         tool.clear_screen()
-        
+
         print("摩天楼数独")
         print("")
         print(" 1.求解    2.游戏")
-        option=input("\n请输入选项：")
+        option = input("\n请输入选项：")
         match option:
             case "1":
                 print("暂时还么有")
@@ -269,4 +280,4 @@ def skyscraper():
                 tool.delay(1)
 
             case _:
-                loop_control=select(option)
+                loop_control = select(option)
