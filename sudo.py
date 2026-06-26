@@ -118,6 +118,10 @@ sudo1 = [
 # 操作数组，创建新数组，递归地复制所有嵌套的子元素
 sudo2 = copy.deepcopy(sudo1)
 
+
+# 数独模式：默认标准"standard"，
+sudo_mode = "standard"
+
 while True:
     # 选择菜单
     tool.clear_screen()

@@ -9,6 +9,8 @@ console = Console()
 # 导入自定义模块
 # 导入工具模块
 import tool
+# 导入输入模块
+import get
 
 
 def select(option):
@@ -47,6 +49,8 @@ def standard():
         option = input("\n请输入选项：")
         match option:
             case "1":
+                # 输入待求解数独
+                sudo = get.standard()
                 print("暂时还么有")
                 tool.delay(1)
 
